@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-template",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run check && tsc -b && vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check-content.mjs",
+    "placeholders": "node scripts/make-placeholders.mjs",
+    "compare": "node tools/compare/compare.mjs"
+  },
+  "dependencies": {
+    "matter-js": "^0.20.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/matter-js": "^0.20.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "playwright": "^1.64.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
